@@ -83,7 +83,7 @@ Price = (Size \* 50) + (Bedrooms \* 10000) - (Age \* 2000) +
 
 **1. Clone the repository**
 
-git clone https://github.com/your-username/house-price-prediction.git
+git clone https://github.com/Muralikrishna6607/House-Price-Prediction-Using-Random-Forest-Regresion.git
 
 cd house-price-prediction
 
