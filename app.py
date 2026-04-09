@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
 # Load trained model
 with open("RndmF.pkl", "rb") as f:
@@ -23,7 +22,7 @@ with st.form("price_prediction_form"):
 
 # Prediction
 if btn:
-    # ✅ IMPORTANT: Column names MUST match training data
+    #  Column names match training data
     new_data = pd.DataFrame(
         [[sqft, bedrooms, age, location_score]],
         columns=["Size", "Bedrooms", "Age", "Locationscore"]
